@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hnQ-Zq-FJQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ThZ-Fe-TFo">
+            <objects>
+                <tabBarController id="hnQ-Zq-FJQ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s2w-oh-DNA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ozr-uU-ZIp" kind="relationship" relationship="viewControllers" id="2UU-tB-Xee"/>
+                        <segue destination="FSR-HK-AWt" kind="relationship" relationship="viewControllers" id="rgB-8f-diI"/>
+                        <segue destination="l8c-zM-mVO" kind="relationship" relationship="viewControllers" id="To9-jC-cJF"/>
+                        <segue destination="D6Y-Fs-YmG" kind="relationship" relationship="viewControllers" id="n65-tS-Nmg"/>
+                        <segue destination="3Ty-Vm-myS" kind="relationship" relationship="viewControllers" id="sId-fc-u2K"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z6k-6T-BU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-918" y="54"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="P0b-v0-6bC">
+            <objects>
+                <navigationController title="首页" id="ozr-uU-ZIp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" id="uXp-nm-4MK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J8X-b9-8aQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zqO-71-YUr" kind="relationship" relationship="rootViewController" id="dih-4f-kUG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A5J-LA-nvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="-514"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="IMm-dy-Ih9">
+            <objects>
+                <viewController title="首页" id="zqO-71-YUr" customClass="HAHomeViewController" customModule="HealthAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="icv-qr-yg2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="KBC-c6-2ea"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XXN-Bu-cdO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pd7-y1-fyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1422" y="-529"/>
+        </scene>
+        <!--饮食-->
+        <scene sceneID="IN8-X3-QGm">
+            <objects>
+                <navigationController title="饮食" id="FSR-HK-AWt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="饮食" id="5W4-Vb-r1D"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="shN-sh-FDe">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pLB-yY-FVj" kind="relationship" relationship="rootViewController" id="9KI-4f-SFN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9U-Av-lPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="289"/>
+        </scene>
+        <!--饮食-->
+        <scene sceneID="5fg-FO-rBw">
+            <objects>
+                <viewController title="饮食" id="pLB-yY-FVj" customClass="HAFoodViewController" customModule="HealthAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MDi-8B-ZO9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="RgW-ml-WMI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z1H-8S-av3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t18-I3-bFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1391" y="152"/>
+        </scene>
+        <!--商城-->
+        <scene sceneID="Je1-gJ-sPU">
+            <objects>
+                <navigationController title="商城" id="l8c-zM-mVO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="商城" id="RtB-h8-jzu"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ej4-5p-7LA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2mA-gn-NF6" kind="relationship" relationship="rootViewController" id="uLS-nF-Sc9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRP-c7-CVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="1123"/>
+        </scene>
+        <!--商城-->
+        <scene sceneID="h7x-lH-bdd">
+            <objects>
+                <viewController title="商城" id="2mA-gn-NF6" customClass="HAShopViewController" customModule="HealthAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="idC-yA-T20">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="DFO-80-U5R"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OLb-3b-VKn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fkb-Te-AYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1542" y="1118"/>
+        </scene>
+        <!--调养-->
+        <scene sceneID="Siz-Uq-Xld">
+            <objects>
+                <navigationController title="调养" id="D6Y-Fs-YmG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="调养" id="691-6y-r8t"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tbe-oD-q5h">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cpf-jF-wIY" kind="relationship" relationship="rootViewController" id="nfs-GK-VjE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="reg-7v-1gf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="1890"/>
+        </scene>
+        <!--调养-->
+        <scene sceneID="S6o-WH-mKY">
+            <objects>
+                <viewController title="调养" id="cpf-jF-wIY" customClass="HARecuperationViewController" customModule="HealthAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dtm-cF-BBR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="aWm-pc-Mhu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pZx-ku-g6g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igO-Wk-pq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1599" y="1914"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="8ks-By-FCi">
+            <objects>
+                <navigationController title="我的" id="3Ty-Vm-myS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" id="127-t8-dik"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D1y-gd-Ylh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rmc-Fd-jWl" kind="relationship" relationship="rootViewController" id="cNd-8o-dNU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tp3-ph-yv9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="492" y="2672"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="Rzb-P1-Sdo">
+            <objects>
+                <viewController title="我的" id="rmc-Fd-jWl" customClass="HAMyViewController" customModule="HealthAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iIp-6W-2lw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="V4A-qW-yQe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xKs-eB-r3Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wsC-S5-CP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1466" y="2699"/>
+        </scene>
+    </scenes>
+</document>
