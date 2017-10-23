@@ -9,7 +9,11 @@
 import UIKit
 
 class HAFoodViewController: UIViewController {
-
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        UIApplication.shared.isStatusBarHidden = false
+//        self.navigationController?.navigationBar.isHidden = false
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
