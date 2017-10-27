@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B4C8B0B1F9EDF710017E768 /* HAPushTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4C8B0A1F9EDF710017E768 /* HAPushTransitionAnimation.swift */; };
+		1B4C8B0D1F9EE2D50017E768 /* HAPopTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4C8B0C1F9EE2D50017E768 /* HAPopTransitionAnimation.swift */; };
+		1B4C8B0F1F9F3D0A0017E768 /* HARecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4C8B0E1F9F3D0A0017E768 /* HARecordCell.swift */; };
 		1B4E16F31F98846700D4F2A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E16F21F98846700D4F2A0 /* AppDelegate.swift */; };
 		1B4E16F81F98846800D4F2A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4E16F61F98846800D4F2A0 /* Main.storyboard */; };
 		1B4E16FA1F98846800D4F2A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4E16F91F98846800D4F2A0 /* Assets.xcassets */; };
@@ -18,6 +21,12 @@
 		1B4E172A1F98A09000D4F2A0 /* HAShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E17291F98A09000D4F2A0 /* HAShopViewController.swift */; };
 		1B4E172C1F98A0F200D4F2A0 /* HARecuperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E172B1F98A0F200D4F2A0 /* HARecuperationViewController.swift */; };
 		1B4E172E1F98A10100D4F2A0 /* HAMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E172D1F98A10100D4F2A0 /* HAMyViewController.swift */; };
+		1B95C8811FA1AE1D00243BFF /* HAViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B95C8801FA1AE1D00243BFF /* HAViewExtensions.swift */; };
+		1B95C8831FA1B15D00243BFF /* HACycleScrollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B95C8821FA1B15D00243BFF /* HACycleScrollViewCell.swift */; };
+		1B95C8851FA1CBFD00243BFF /* HACycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B95C8841FA1CBFD00243BFF /* HACycleScrollView.swift */; };
+		1BBE70581FA2FE2400B02A86 /* HAPillPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE70571FA2FE2400B02A86 /* HAPillPageControl.swift */; };
+		1BBE705A1FA2FF5B00B02A86 /* HASnakePageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE70591FA2FF5B00B02A86 /* HASnakePageControl.swift */; };
+		1BBE705C1FA3016C00B02A86 /* HAFilledPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE705B1FA3016C00B02A86 /* HAFilledPageControl.swift */; };
 		1BEA866E1F99D27700502A30 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA866D1F99D27700502A30 /* Constant.swift */; };
 		1BEA86701F99D9BE00502A30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA866F1F99D9BE00502A30 /* ViewController.swift */; };
 		3BCC7D57A88F299AA55404CD /* Pods_HealthAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDDB81B790054D8BDA62DDA /* Pods_HealthAssistant.framework */; };
@@ -42,6 +51,9 @@
 
 /* Begin PBXFileReference section */
 		188BED294FFA756807D4E8E9 /* Pods-HealthAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthAssistant/Pods-HealthAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		1B4C8B0A1F9EDF710017E768 /* HAPushTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAPushTransitionAnimation.swift; sourceTree = "<group>"; };
+		1B4C8B0C1F9EE2D50017E768 /* HAPopTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAPopTransitionAnimation.swift; sourceTree = "<group>"; };
+		1B4C8B0E1F9F3D0A0017E768 /* HARecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HARecordCell.swift; sourceTree = "<group>"; };
 		1B4E16EF1F98846700D4F2A0 /* HealthAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4E16F21F98846700D4F2A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B4E16F71F98846800D4F2A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +71,12 @@
 		1B4E17291F98A09000D4F2A0 /* HAShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAShopViewController.swift; sourceTree = "<group>"; };
 		1B4E172B1F98A0F200D4F2A0 /* HARecuperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HARecuperationViewController.swift; sourceTree = "<group>"; };
 		1B4E172D1F98A10100D4F2A0 /* HAMyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAMyViewController.swift; sourceTree = "<group>"; };
+		1B95C8801FA1AE1D00243BFF /* HAViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAViewExtensions.swift; sourceTree = "<group>"; };
+		1B95C8821FA1B15D00243BFF /* HACycleScrollViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HACycleScrollViewCell.swift; sourceTree = "<group>"; };
+		1B95C8841FA1CBFD00243BFF /* HACycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HACycleScrollView.swift; sourceTree = "<group>"; };
+		1BBE70571FA2FE2400B02A86 /* HAPillPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAPillPageControl.swift; sourceTree = "<group>"; };
+		1BBE70591FA2FF5B00B02A86 /* HASnakePageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HASnakePageControl.swift; sourceTree = "<group>"; };
+		1BBE705B1FA3016C00B02A86 /* HAFilledPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAFilledPageControl.swift; sourceTree = "<group>"; };
 		1BEA866D1F99D27700502A30 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		1BEA866F1F99D9BE00502A30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A28500B261D5C4B3456795FC /* Pods-HealthAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthAssistant/Pods-HealthAssistant.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +109,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B4C8B041F9EDE030017E768 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1B95C8801FA1AE1D00243BFF /* HAViewExtensions.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		1B4C8B051F9EDE080017E768 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1B4C8B0A1F9EDF710017E768 /* HAPushTransitionAnimation.swift */,
+				1B4C8B0C1F9EE2D50017E768 /* HAPopTransitionAnimation.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1B4C8B061F9EDE0E0017E768 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B4C8B0E1F9F3D0A0017E768 /* HARecordCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B4C8B071F9EDE120017E768 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		1B4C8B081F9EDE170017E768 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				1BEA866D1F99D27700502A30 /* Constant.swift */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		1B4C8B091F9EDE1B0017E768 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1B4E16E61F98846700D4F2A0 = {
 			isa = PBXGroup;
 			children = (
@@ -119,11 +184,17 @@
 				1B4E16F21F98846700D4F2A0 /* AppDelegate.swift */,
 				1BEA866F1F99D9BE00502A30 /* ViewController.swift */,
 				1B4E16F61F98846800D4F2A0 /* Main.storyboard */,
+				1B95C87E1FA1AD2300243BFF /* Vendor */,
+				1B4C8B091F9EDE1B0017E768 /* Models */,
+				1B4C8B081F9EDE170017E768 /* Macros */,
+				1B4C8B071F9EDE120017E768 /* CustomView */,
+				1B4C8B061F9EDE0E0017E768 /* Views */,
+				1B4C8B051F9EDE080017E768 /* Utils */,
+				1B4C8B041F9EDE030017E768 /* Categories */,
 				1B4E17201F989F7300D4F2A0 /* ViewControllers */,
 				1B4E16F91F98846800D4F2A0 /* Assets.xcassets */,
 				1B4E16FB1F98846800D4F2A0 /* LaunchScreen.storyboard */,
 				1B4E16FE1F98846800D4F2A0 /* Info.plist */,
-				1BEA866D1F99D27700502A30 /* Constant.swift */,
 			);
 			path = HealthAssistant;
 			sourceTree = "<group>";
@@ -156,6 +227,26 @@
 				1B4E172D1F98A10100D4F2A0 /* HAMyViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1B95C87E1FA1AD2300243BFF /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				1B95C87F1FA1ADB500243BFF /* CycleScrollView */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		1B95C87F1FA1ADB500243BFF /* CycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				1B95C8821FA1B15D00243BFF /* HACycleScrollViewCell.swift */,
+				1B95C8841FA1CBFD00243BFF /* HACycleScrollView.swift */,
+				1BBE70571FA2FE2400B02A86 /* HAPillPageControl.swift */,
+				1BBE705B1FA3016C00B02A86 /* HAFilledPageControl.swift */,
+				1BBE70591FA2FF5B00B02A86 /* HASnakePageControl.swift */,
+			);
+			path = CycleScrollView;
 			sourceTree = "<group>";
 		};
 		8445298921B874E52218D44F /* Frameworks */ = {
@@ -316,11 +407,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HealthAssistant/Pods-HealthAssistant-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -370,14 +467,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4C8B0D1F9EE2D50017E768 /* HAPopTransitionAnimation.swift in Sources */,
 				1B4E172C1F98A0F200D4F2A0 /* HARecuperationViewController.swift in Sources */,
 				1B4E172A1F98A09000D4F2A0 /* HAShopViewController.swift in Sources */,
+				1B95C8851FA1CBFD00243BFF /* HACycleScrollView.swift in Sources */,
+				1B4C8B0B1F9EDF710017E768 /* HAPushTransitionAnimation.swift in Sources */,
+				1BBE705C1FA3016C00B02A86 /* HAFilledPageControl.swift in Sources */,
 				1BEA866E1F99D27700502A30 /* Constant.swift in Sources */,
+				1B95C8811FA1AE1D00243BFF /* HAViewExtensions.swift in Sources */,
 				1B4E172E1F98A10100D4F2A0 /* HAMyViewController.swift in Sources */,
 				1B4E17281F98A04A00D4F2A0 /* HAFoodViewController.swift in Sources */,
+				1BBE70581FA2FE2400B02A86 /* HAPillPageControl.swift in Sources */,
 				1B4E16F31F98846700D4F2A0 /* AppDelegate.swift in Sources */,
 				1BEA86701F99D9BE00502A30 /* ViewController.swift in Sources */,
+				1B95C8831FA1B15D00243BFF /* HACycleScrollViewCell.swift in Sources */,
+				1BBE705A1FA2FF5B00B02A86 /* HASnakePageControl.swift in Sources */,
 				1B4E17251F989FCA00D4F2A0 /* HAHomeViewController.swift in Sources */,
+				1B4C8B0F1F9F3D0A0017E768 /* HARecordCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

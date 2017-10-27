@@ -7,70 +7,82 @@
 //
 
 import UIKit
+import Alamofire
+import Kingfisher
+import MJRefresh
 
-class HAHomeViewController: UIViewController ,UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource{
-    var scrolView = UIScrollView()
-    var applyImageView = UIImageView()
+class HAHomeViewController: UIViewController ,UIScrollViewDelegate,UINavigationControllerDelegate,UITableViewDelegate,UITableViewDataSource{
     var tableView = UITableView()
-    var scrolToTopBtn = UIButton ()
+    var isScrol = Bool()
+    var scrolView = HACycleScrollView()
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.delegate = self
         UIApplication.shared.isStatusBarHidden = true
         self.navigationController?.navigationBar.isHidden = true
-    }
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        UIApplication.shared.isStatusBarHidden = false
-        self.navigationController?.navigationBar.isHidden = false
+        self.isScrol = false
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "首页"
-        
         self.view.backgroundColor = UIColor.yellow
         self.setUpUI()
-        
     }
+    
     func setUpUI() -> Void {
         
-        self.scrolView = UIScrollView.init()
-        self.scrolView.frame = CGRect(x:0,y:0,width:SCREEN_WIDTH,height:SCREEN_HEIGHT)
-        self.view.addSubview(self.scrolView)
-        self.scrolView.delegate = self
-        self.scrolView.contentSize = CGSize(width:SCREEN_WIDTH,height:SCREEN_HEIGHT * 2)
-        self.scrolView.isPagingEnabled = true
-        //广告
-        self.applyImageView = UIImageView.init(frame: CGRect(x: 0,y: 0,width: SCREEN_WIDTH,height: SCREEN_HEIGHT))
-        self.scrolView.isUserInteractionEnabled = true
-        self.applyImageView.image = UIImage(named: "apply")
-        self.scrolView.addSubview(self.applyImageView)
-        //上滑按钮
-        self.scrolToTopBtn = UIButton.init(type: .custom)
-        self.scrolToTopBtn.frame = CGRect(x: (SCREEN_WIDTH - 200)/2,y: SCREEN_HEIGHT - 80,width: 200 ,height: 30)
-        self.scrolToTopBtn.layer.cornerRadius = 15
-        self.scrolToTopBtn.clipsToBounds = true
-        self.scrolToTopBtn.backgroundColor = UIColor.lightGray
-        self.scrolToTopBtn.setTitleColor(UIColor.white, for: .normal)
-        self.scrolToTopBtn.setTitle("上滑进入主页", for: .normal)
-        self.applyImageView.addSubview(self.scrolToTopBtn)
+        let imagesURLStrings = [
+            "http://www.g-photography.net/file_picture/3/3587/4.jpg",
+            "http://img2.zjolcdn.com/pic/0/13/66/56/13665652_914292.jpg",
+            "http://c.hiphotos.baidu.com/image/w%3D400/sign=c2318ff84334970a4773112fa5c8d1c0/b7fd5266d0160924c1fae5ccd60735fae7cd340d.jpg",
+            "http://img3.redocn.com/tupian/20150806/weimeisheyingtupian_4779232.jpg",
+            ];
+        self.scrolView = HACycleScrollView.llCycleScrollViewWithFrame(CGRect(x:0,y:0,width:SCREEN_WIDTH,height:200))
+        scrolView.scrollDirection = .horizontal
+        scrolView.customPageControlStyle = .snake
         
-        self.tableView = UITableView.init(frame: CGRect(x:0,y:SCREEN_HEIGHT,width:SCREEN_WIDTH,height:SCREEN_HEIGHT), style: .grouped)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(2)) {
+             self.scrolView.imagePaths = imagesURLStrings
+        }
+        
+        self.tableView = UITableView.init(frame: CGRect(x:0,y:0,width:SCREEN_WIDTH,height:SCREEN_HEIGHT), style: .grouped)
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.scrolView.addSubview(self.tableView)
-        
+        self.tableView.tableHeaderView = self.scrolView
+        self.view.addSubview(self.tableView)
+        self.tableView.mj_header = MJRefreshNormalHeader.init(refreshingBlock: {
+            self.reloadData()
+        })
     }
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.y > SCREEN_HEIGHT - 10 {
-            UIApplication.shared.isStatusBarHidden = false
-            self.navigationController?.navigationBar.isHidden = false
-        } else {
-            UIApplication.shared.isStatusBarHidden = true
-            self.navigationController?.navigationBar.isHidden = true
+    ///** 返回转场动画实例*/
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+       
+        if operation == UINavigationControllerOperation.pop && fromVC.isKind(of: type(of: ViewController()) as AnyClass)  {
+           return popTrasition
+        } else if operation == UINavigationControllerOperation.push && toVC.isKind(of: type(of: ViewController()) as AnyClass){
+            return pushTrasition
+        } else if operation == UINavigationControllerOperation.pop && fromVC.isKind(of: type(of: self)){
+            self.navigationController?.delegate = nil
+            
+        }
+        return nil
+    }
+    func reloadData() -> Void {
+        self.tableView.mj_header.endRefreshing()
+        if isScrol {
+            self.navigationController?.pushViewController(ViewController(), animated: true)
         }
     }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y < -120 {
+            isScrol = true
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
@@ -84,6 +96,14 @@ class HAHomeViewController: UIViewController ,UIScrollViewDelegate,UITableViewDe
         }
         return cell!
     }
+    lazy var popTrasition : HAPopTransitionAnimation = {
+        let popTrasition = HAPopTransitionAnimation.init()
+        return popTrasition
+    }()
+    lazy var pushTrasition : HAPushTransitionAnimation = {
+        let pushTrasition = HAPushTransitionAnimation.init()
+      return pushTrasition
+    }()
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
