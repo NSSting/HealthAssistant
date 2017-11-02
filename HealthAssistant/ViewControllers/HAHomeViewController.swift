@@ -15,6 +15,7 @@ class HAHomeViewController: UIViewController ,UIScrollViewDelegate,UINavigationC
     var tableView = UITableView()
     var isScrol = Bool()
     var scrolView = HACycleScrollView()
+    var titleArray: NSArray!
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,7 +34,8 @@ class HAHomeViewController: UIViewController ,UIScrollViewDelegate,UINavigationC
     }
     
     func setUpUI() -> Void {
-        
+        self.titleArray = NSArray.init()
+        self.titleArray = ["档案:","调理方案","时令好文","调养妙方"]
         let imagesURLStrings = [
             "http://www.g-photography.net/file_picture/3/3587/4.jpg",
             "http://img2.zjolcdn.com/pic/0/13/66/56/13665652_914292.jpg",
@@ -48,14 +50,18 @@ class HAHomeViewController: UIViewController ,UIScrollViewDelegate,UINavigationC
              self.scrolView.imagePaths = imagesURLStrings
         }
         
+        
         self.tableView = UITableView.init(frame: CGRect(x:0,y:0,width:SCREEN_WIDTH,height:SCREEN_HEIGHT), style: .grouped)
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.tableHeaderView = self.scrolView
+        self.tableView.register(HATipsCell.self, forCellReuseIdentifier: "cell")
+        self.tableView.register(HARecordCell.self, forCellReuseIdentifier: "recordCell")
+
         self.view.addSubview(self.tableView)
-        self.tableView.mj_header = MJRefreshNormalHeader.init(refreshingBlock: {
-            self.reloadData()
-        })
+        let header = HADIYHeader.init(refreshingTarget: self, refreshingAction: #selector(loadData))
+        self.tableView.mj_header = header
+        header?.beginRefreshing()
     }
     ///** 返回转场动画实例*/
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
@@ -70,7 +76,7 @@ class HAHomeViewController: UIViewController ,UIScrollViewDelegate,UINavigationC
         }
         return nil
     }
-    func reloadData() -> Void {
+    @objc func loadData() {
         self.tableView.mj_header.endRefreshing()
         if isScrol {
             self.navigationController?.pushViewController(ViewController(), animated: true)
@@ -84,18 +90,33 @@ class HAHomeViewController: UIViewController ,UIScrollViewDelegate,UINavigationC
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
-    }
-    func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        if (cell == nil) {
-            cell = UITableViewCell.init(style: .default, reuseIdentifier: "cell")
-        }
-        return cell!
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.titleArray.count
     }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HATipsCell
+            cell.backgroundColor = UIColor.white
+            cell.titleLab.text = self.titleArray.object(at: indexPath.section) as? String
+            if indexPath.section != self.titleArray.count - 1 {
+                cell.backgroundColor = UIColor.brown
+            }
+            return cell
+        } else {
+            let recordCell = tableView.dequeueReusableCell(withIdentifier: "recordCell") as! HARecordCell
+            return recordCell
+        }
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return 44
+        } else {
+           return (SCREEN_WIDTH - PADDING_LEFT_RIGHT * 2) / 2
+        }
+    }
+    
     lazy var popTrasition : HAPopTransitionAnimation = {
         let popTrasition = HAPopTransitionAnimation.init()
         return popTrasition

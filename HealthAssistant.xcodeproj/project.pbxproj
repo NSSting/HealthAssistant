@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B459AED1FAACD8500BFA3B2 /* HADIYHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B459AEC1FAACD8500BFA3B2 /* HADIYHeader.swift */; };
 		1B4C8B0B1F9EDF710017E768 /* HAPushTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4C8B0A1F9EDF710017E768 /* HAPushTransitionAnimation.swift */; };
 		1B4C8B0D1F9EE2D50017E768 /* HAPopTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4C8B0C1F9EE2D50017E768 /* HAPopTransitionAnimation.swift */; };
 		1B4C8B0F1F9F3D0A0017E768 /* HARecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4C8B0E1F9F3D0A0017E768 /* HARecordCell.swift */; };
@@ -21,6 +22,7 @@
 		1B4E172A1F98A09000D4F2A0 /* HAShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E17291F98A09000D4F2A0 /* HAShopViewController.swift */; };
 		1B4E172C1F98A0F200D4F2A0 /* HARecuperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E172B1F98A0F200D4F2A0 /* HARecuperationViewController.swift */; };
 		1B4E172E1F98A10100D4F2A0 /* HAMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E172D1F98A10100D4F2A0 /* HAMyViewController.swift */; };
+		1B9261B81FA9A4760003CD37 /* HATipsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9261B71FA9A4760003CD37 /* HATipsCell.swift */; };
 		1B95C8811FA1AE1D00243BFF /* HAViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B95C8801FA1AE1D00243BFF /* HAViewExtensions.swift */; };
 		1B95C8831FA1B15D00243BFF /* HACycleScrollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B95C8821FA1B15D00243BFF /* HACycleScrollViewCell.swift */; };
 		1B95C8851FA1CBFD00243BFF /* HACycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B95C8841FA1CBFD00243BFF /* HACycleScrollView.swift */; };
@@ -51,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		188BED294FFA756807D4E8E9 /* Pods-HealthAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthAssistant/Pods-HealthAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		1B459AEC1FAACD8500BFA3B2 /* HADIYHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HADIYHeader.swift; sourceTree = "<group>"; };
 		1B4C8B0A1F9EDF710017E768 /* HAPushTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAPushTransitionAnimation.swift; sourceTree = "<group>"; };
 		1B4C8B0C1F9EE2D50017E768 /* HAPopTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAPopTransitionAnimation.swift; sourceTree = "<group>"; };
 		1B4C8B0E1F9F3D0A0017E768 /* HARecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HARecordCell.swift; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		1B4E17291F98A09000D4F2A0 /* HAShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAShopViewController.swift; sourceTree = "<group>"; };
 		1B4E172B1F98A0F200D4F2A0 /* HARecuperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HARecuperationViewController.swift; sourceTree = "<group>"; };
 		1B4E172D1F98A10100D4F2A0 /* HAMyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAMyViewController.swift; sourceTree = "<group>"; };
+		1B9261B71FA9A4760003CD37 /* HATipsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HATipsCell.swift; sourceTree = "<group>"; };
 		1B95C8801FA1AE1D00243BFF /* HAViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAViewExtensions.swift; sourceTree = "<group>"; };
 		1B95C8821FA1B15D00243BFF /* HACycleScrollViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HACycleScrollViewCell.swift; sourceTree = "<group>"; };
 		1B95C8841FA1CBFD00243BFF /* HACycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HACycleScrollView.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				1B4C8B0E1F9F3D0A0017E768 /* HARecordCell.swift */,
+				1B9261B71FA9A4760003CD37 /* HATipsCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 		1B4C8B071F9EDE120017E768 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				1B459AEC1FAACD8500BFA3B2 /* HADIYHeader.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -467,8 +473,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9261B81FA9A4760003CD37 /* HATipsCell.swift in Sources */,
 				1B4C8B0D1F9EE2D50017E768 /* HAPopTransitionAnimation.swift in Sources */,
 				1B4E172C1F98A0F200D4F2A0 /* HARecuperationViewController.swift in Sources */,
+				1B459AED1FAACD8500BFA3B2 /* HADIYHeader.swift in Sources */,
 				1B4E172A1F98A09000D4F2A0 /* HAShopViewController.swift in Sources */,
 				1B95C8851FA1CBFD00243BFF /* HACycleScrollView.swift in Sources */,
 				1B4C8B0B1F9EDF710017E768 /* HAPushTransitionAnimation.swift in Sources */,

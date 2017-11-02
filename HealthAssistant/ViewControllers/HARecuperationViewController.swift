@@ -13,7 +13,6 @@ class HARecuperationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "调养";
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
