@@ -13,6 +13,7 @@ import MJRefresh
 class HADIYHeader: MJRefreshHeader {
     var titleLab = UILabel()
     var headerImage = UIImageView()
+    
    override func prepare() {
         super.prepare()
     //设置空间高度

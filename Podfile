@@ -5,4 +5,5 @@ pod ‘MJRefresh’
 pod ‘Alamofire’
 pod ‘Kingfisher’
 pod ‘SnapKit’
+pod ‘PageMenu’
 end

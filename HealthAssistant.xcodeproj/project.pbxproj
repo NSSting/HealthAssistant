@@ -22,13 +22,20 @@
 		1B4E172A1F98A09000D4F2A0 /* HAShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E17291F98A09000D4F2A0 /* HAShopViewController.swift */; };
 		1B4E172C1F98A0F200D4F2A0 /* HARecuperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E172B1F98A0F200D4F2A0 /* HARecuperationViewController.swift */; };
 		1B4E172E1F98A10100D4F2A0 /* HAMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E172D1F98A10100D4F2A0 /* HAMyViewController.swift */; };
+		1B62E16D1FC51C8F00DE1215 /* HAPageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B62E16C1FC51C8F00DE1215 /* HAPageListCell.swift */; };
+		1B62E16F1FC560AF00DE1215 /* HABasicBottomLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B62E16E1FC560AF00DE1215 /* HABasicBottomLineCell.swift */; };
+		1B6B066D1FB44FC800254102 /* HASchemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B066C1FB44FC800254102 /* HASchemeCell.swift */; };
 		1B9261B81FA9A4760003CD37 /* HATipsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9261B71FA9A4760003CD37 /* HATipsCell.swift */; };
 		1B95C8811FA1AE1D00243BFF /* HAViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B95C8801FA1AE1D00243BFF /* HAViewExtensions.swift */; };
 		1B95C8831FA1B15D00243BFF /* HACycleScrollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B95C8821FA1B15D00243BFF /* HACycleScrollViewCell.swift */; };
 		1B95C8851FA1CBFD00243BFF /* HACycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B95C8841FA1CBFD00243BFF /* HACycleScrollView.swift */; };
+		1B9DA34D1FB186B600F4B418 /* HARecommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA34C1FB186B600F4B418 /* HARecommentView.swift */; };
+		1BB733761FC2866A0081DE03 /* HAGoodEssayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB733751FC2866A0081DE03 /* HAGoodEssayCell.swift */; };
+		1BB733781FC2ACB40081DE03 /* HAPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB733771FC2ACB40081DE03 /* HAPageViewController.swift */; };
 		1BBE70581FA2FE2400B02A86 /* HAPillPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE70571FA2FE2400B02A86 /* HAPillPageControl.swift */; };
 		1BBE705A1FA2FF5B00B02A86 /* HASnakePageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE70591FA2FF5B00B02A86 /* HASnakePageControl.swift */; };
 		1BBE705C1FA3016C00B02A86 /* HAFilledPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE705B1FA3016C00B02A86 /* HAFilledPageControl.swift */; };
+		1BDB8F411FB583F8003B16B1 /* HAHomeContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB8F401FB583F8003B16B1 /* HAHomeContentCell.swift */; };
 		1BEA866E1F99D27700502A30 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA866D1F99D27700502A30 /* Constant.swift */; };
 		1BEA86701F99D9BE00502A30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA866F1F99D9BE00502A30 /* ViewController.swift */; };
 		3BCC7D57A88F299AA55404CD /* Pods_HealthAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDDB81B790054D8BDA62DDA /* Pods_HealthAssistant.framework */; };
@@ -74,13 +81,20 @@
 		1B4E17291F98A09000D4F2A0 /* HAShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAShopViewController.swift; sourceTree = "<group>"; };
 		1B4E172B1F98A0F200D4F2A0 /* HARecuperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HARecuperationViewController.swift; sourceTree = "<group>"; };
 		1B4E172D1F98A10100D4F2A0 /* HAMyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAMyViewController.swift; sourceTree = "<group>"; };
+		1B62E16C1FC51C8F00DE1215 /* HAPageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAPageListCell.swift; sourceTree = "<group>"; };
+		1B62E16E1FC560AF00DE1215 /* HABasicBottomLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABasicBottomLineCell.swift; sourceTree = "<group>"; };
+		1B6B066C1FB44FC800254102 /* HASchemeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HASchemeCell.swift; sourceTree = "<group>"; };
 		1B9261B71FA9A4760003CD37 /* HATipsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HATipsCell.swift; sourceTree = "<group>"; };
 		1B95C8801FA1AE1D00243BFF /* HAViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAViewExtensions.swift; sourceTree = "<group>"; };
 		1B95C8821FA1B15D00243BFF /* HACycleScrollViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HACycleScrollViewCell.swift; sourceTree = "<group>"; };
 		1B95C8841FA1CBFD00243BFF /* HACycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HACycleScrollView.swift; sourceTree = "<group>"; };
+		1B9DA34C1FB186B600F4B418 /* HARecommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HARecommentView.swift; sourceTree = "<group>"; };
+		1BB733751FC2866A0081DE03 /* HAGoodEssayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAGoodEssayCell.swift; sourceTree = "<group>"; };
+		1BB733771FC2ACB40081DE03 /* HAPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAPageViewController.swift; sourceTree = "<group>"; };
 		1BBE70571FA2FE2400B02A86 /* HAPillPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAPillPageControl.swift; sourceTree = "<group>"; };
 		1BBE70591FA2FF5B00B02A86 /* HASnakePageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HASnakePageControl.swift; sourceTree = "<group>"; };
 		1BBE705B1FA3016C00B02A86 /* HAFilledPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAFilledPageControl.swift; sourceTree = "<group>"; };
+		1BDB8F401FB583F8003B16B1 /* HAHomeContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAHomeContentCell.swift; sourceTree = "<group>"; };
 		1BEA866D1F99D27700502A30 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		1BEA866F1F99D9BE00502A30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A28500B261D5C4B3456795FC /* Pods-HealthAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthAssistant/Pods-HealthAssistant.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +149,11 @@
 			children = (
 				1B4C8B0E1F9F3D0A0017E768 /* HARecordCell.swift */,
 				1B9261B71FA9A4760003CD37 /* HATipsCell.swift */,
+				1B6B066C1FB44FC800254102 /* HASchemeCell.swift */,
+				1BDB8F401FB583F8003B16B1 /* HAHomeContentCell.swift */,
+				1BB733751FC2866A0081DE03 /* HAGoodEssayCell.swift */,
+				1B62E16C1FC51C8F00DE1215 /* HAPageListCell.swift */,
+				1B62E16E1FC560AF00DE1215 /* HABasicBottomLineCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				1B459AEC1FAACD8500BFA3B2 /* HADIYHeader.swift */,
+				1B9DA34C1FB186B600F4B418 /* HARecommentView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -231,6 +251,7 @@
 				1B4E17291F98A09000D4F2A0 /* HAShopViewController.swift */,
 				1B4E172B1F98A0F200D4F2A0 /* HARecuperationViewController.swift */,
 				1B4E172D1F98A10100D4F2A0 /* HAMyViewController.swift */,
+				1BB733771FC2ACB40081DE03 /* HAPageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -416,6 +437,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -423,6 +445,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PageMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,11 +496,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B6B066D1FB44FC800254102 /* HASchemeCell.swift in Sources */,
 				1B9261B81FA9A4760003CD37 /* HATipsCell.swift in Sources */,
+				1BB733781FC2ACB40081DE03 /* HAPageViewController.swift in Sources */,
 				1B4C8B0D1F9EE2D50017E768 /* HAPopTransitionAnimation.swift in Sources */,
+				1BDB8F411FB583F8003B16B1 /* HAHomeContentCell.swift in Sources */,
+				1B9DA34D1FB186B600F4B418 /* HARecommentView.swift in Sources */,
 				1B4E172C1F98A0F200D4F2A0 /* HARecuperationViewController.swift in Sources */,
 				1B459AED1FAACD8500BFA3B2 /* HADIYHeader.swift in Sources */,
 				1B4E172A1F98A09000D4F2A0 /* HAShopViewController.swift in Sources */,
+				1BB733761FC2866A0081DE03 /* HAGoodEssayCell.swift in Sources */,
 				1B95C8851FA1CBFD00243BFF /* HACycleScrollView.swift in Sources */,
 				1B4C8B0B1F9EDF710017E768 /* HAPushTransitionAnimation.swift in Sources */,
 				1BBE705C1FA3016C00B02A86 /* HAFilledPageControl.swift in Sources */,
@@ -490,7 +518,9 @@
 				1BEA86701F99D9BE00502A30 /* ViewController.swift in Sources */,
 				1B95C8831FA1B15D00243BFF /* HACycleScrollViewCell.swift in Sources */,
 				1BBE705A1FA2FF5B00B02A86 /* HASnakePageControl.swift in Sources */,
+				1B62E16F1FC560AF00DE1215 /* HABasicBottomLineCell.swift in Sources */,
 				1B4E17251F989FCA00D4F2A0 /* HAHomeViewController.swift in Sources */,
+				1B62E16D1FC51C8F00DE1215 /* HAPageListCell.swift in Sources */,
 				1B4C8B0F1F9F3D0A0017E768 /* HARecordCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,6 +630,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -649,6 +680,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

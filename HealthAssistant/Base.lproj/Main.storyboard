@@ -17,6 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.85780164930000002" blue="0.044949001740000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="ozr-uU-ZIp" kind="relationship" relationship="viewControllers" id="2UU-tB-Xee"/>
@@ -34,7 +35,7 @@
         <scene sceneID="P0b-v0-6bC">
             <objects>
                 <navigationController title="首页" id="ozr-uU-ZIp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" id="uXp-nm-4MK"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="home_tabbar" id="uXp-nm-4MK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J8X-b9-8aQ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -67,7 +68,7 @@
         <scene sceneID="IN8-X3-QGm">
             <objects>
                 <navigationController title="饮食" id="FSR-HK-AWt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="饮食" id="5W4-Vb-r1D"/>
+                    <tabBarItem key="tabBarItem" title="饮食" image="food_tabbar" id="5W4-Vb-r1D"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="shN-sh-FDe">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -100,7 +101,7 @@
         <scene sceneID="Je1-gJ-sPU">
             <objects>
                 <navigationController title="商城" id="l8c-zM-mVO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="商城" id="RtB-h8-jzu"/>
+                    <tabBarItem key="tabBarItem" title="商城" image="shop_tabbar" id="RtB-h8-jzu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ej4-5p-7LA">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -133,7 +134,7 @@
         <scene sceneID="Siz-Uq-Xld">
             <objects>
                 <navigationController title="调养" id="D6Y-Fs-YmG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="调养" id="691-6y-r8t"/>
+                    <tabBarItem key="tabBarItem" title="调养" image="recuperate_tabbar" id="691-6y-r8t"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tbe-oD-q5h">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -166,7 +167,7 @@
         <scene sceneID="8ks-By-FCi">
             <objects>
                 <navigationController title="我的" id="3Ty-Vm-myS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" id="127-t8-dik"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="mine_tabbar" id="127-t8-dik"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D1y-gd-Ylh">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -196,4 +197,11 @@
             <point key="canvasLocation" x="1466" y="2699"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="food_tabbar" width="35" height="35"/>
+        <image name="home_tabbar" width="24" height="24"/>
+        <image name="mine_tabbar" width="24" height="24"/>
+        <image name="recuperate_tabbar" width="35" height="35"/>
+        <image name="shop_tabbar" width="25" height="25"/>
+    </resources>
 </document>

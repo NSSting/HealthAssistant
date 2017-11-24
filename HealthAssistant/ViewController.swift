@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         //广告
         self.applyImageView = UIImageView.init(frame: CGRect(x: 0,y: 0,width: SCREEN_WIDTH,height: SCREEN_HEIGHT))
         self.applyImageView.isUserInteractionEnabled = true
-        let resource = ImageResource.init(downloadURL: URL.init(string: "http://img.huofar.com/life/card/18_1.jpg")!, cacheKey: "my_cache")
+        let resource = ImageResource.init(downloadURL: URL.init(string: "http://img.huofar.com/life/card/19_1.jpg")!, cacheKey: "my_cache")
         self.applyImageView.kf.setImage(with: resource)
         self.view.addSubview(self.applyImageView)
         
